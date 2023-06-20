@@ -1,5 +1,5 @@
 .listing {
-  background: var(accent-color);
+  background: var(--accent-color);
   border-radius: 30px;
   padding-bottom: 30px;
 }
@@ -26,6 +26,6 @@ section.listing a {
   color: var(--primary-color);
 }
 section.listing a::after {
-  content: "/203A";
+  content: "\203A";
   margin-left: 5px;
 }
