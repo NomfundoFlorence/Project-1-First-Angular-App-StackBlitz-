@@ -10,10 +10,11 @@ import routeConfig from './app/routes';
 bootstrapApplication(AppComponent,
   {
     providers: [
-      provideProtractorTestingSupport(), provideRouter(routeConfig)
+      provideProtractorTestingSupport(),
+      provideRouter(routeConfig)
     ]
   }
-  ).catch(err => console.error(err));
+).catch(err => console.error(err));
 
 
 /*

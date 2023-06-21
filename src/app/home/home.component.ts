@@ -7,7 +7,9 @@ import { HousingService } from '../housing.service';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, HousingLocationComponent],
+  imports: [
+    CommonModule,
+    HousingLocationComponent]
   template: `
     <section>
       <form>
@@ -16,7 +18,7 @@ import { HousingService } from '../housing.service';
       </form>
     </section>
     <section class = "results">
-      <app-housing-location *ngFor = " let housingLocation of housingLocationList" [housingLocation] = "housingLocation"></app-housing-location>
+      <app-housing-location *ngFor = "let housingLocation of housingLocationList" [housingLocation] = "housingLocation"></app-housing-location>
     </section>
   `,
   styleUrls: ['./home.component.css'],

@@ -115,6 +115,4 @@ export class HousingService {
   getHousingLocationByID(id: number): HousingLocation | undefined {
     return this.housingLocationList.find(housingLocation => housingLocation.id === id);
   }
-  
-  constructor() { }
 }
