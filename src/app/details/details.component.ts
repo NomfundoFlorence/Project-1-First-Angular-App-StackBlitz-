@@ -62,7 +62,7 @@ export class DetailsComponent {
     const housingLocationId = Number(this.route.snapshot.params['id']);
     this.housingLocation = this.housingService.getHousingLocationById(housingLocationId);
   }
-
+/*The code below is an even handler and defines wha happens when the apply now button is clicked*/
   submitApplication() {
     this.housingService.submitApplication(
       this.applyForm.value.firstName ?? '',
